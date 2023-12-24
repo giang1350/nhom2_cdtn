@@ -1,0 +1,547 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+.thanhdieuhuong{
+    width: 100%;
+    background: #fff;
+    color: #9F91CC;
+}
+
+/* Thanh điều hướng */
+nav{
+    background: #9F91CC;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width: 47%;
+}
+
+.user-pic{
+    width: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 400%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:last-child{
+    color: #fff;
+    background-color: #3D246C;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    margin-left: 0px;
+    border-radius: 50px;
+}
+
+/* Thông tin mở trên Icon Người dùng */
+.sub-menu-wrap{
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: #FFDBC3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0px 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link i{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+
+/* Footer */
+footer{
+    background-color: #9F91CC;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+
+.mxh{
+    display: flex;
+    justify-content: center;
+}
+.mxh a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.mxh a i{
+    font-size: 2em;
+    color: #9F91CC;
+    opacity: 0.9;
+}
+.mxh a:hover{
+    background-color: #9F91CC;
+    transition: 0.5s;
+}
+.mxh a i:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li{
+    list-style: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #9F91CC;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+
+.noidung1{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Phương thức thanh toán */
+.container{
+    display: flex;
+    width: 67%;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.ctn_left{
+    width: 25%;
+    font-weight: bold;
+}
+.ctn_left p{
+    padding: 30px 20px;
+}
+.methods{
+    padding: 10px 0;
+}
+.methods div{
+    padding: 7px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.methods div:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.methods div::after{
+    content: '';
+    display: inline-block;
+    color: #5C4B99;
+    width: 0; height: 0;
+    border: transparent solid;
+    border-width: 4px 0 4px 4px;
+    border-left-color: var(--fondy-success);
+    margin-left: 10px;
+}
+.fa-solid{
+    margin-right: 10px;
+    font-size: 22px;
+    color: #aaa;
+}
+
+.ctn_center{
+	width: 50%;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	height: 80vh;
+}
+.ctn_center a{
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ctn_right{
+	width: 25%;
+}
+.ctn_right p{
+	padding: 30px 20px;
+	font-weight: bold;
+}
+.details{
+	padding: 20px 20px;
+}
+.ctn_right a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+}
+
+/* Card-detail1 */
+.card-details{
+	padding: 20px 80px;
+}
+.card-details .c-number{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 0 12px;
+	margin-top: 10px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+input{
+	border: none;
+	border-radius: 3px;
+	outline: none;
+}
+.c-details{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+.cc-exp{
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	height: 50px;
+	margin-top: 10px;
+	padding: 12px;
+	width: 150px;
+}
+.c-details .cvv-box{
+	border: 1px solid #aaa;
+	margin-top: 10px;
+	padding: 12px;
+	height: 50px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	width: 108px;
+}
+.cc-cvv{
+	width: 60px;
+}
+.email input{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 12px;
+	height: 50px;
+	margin-top: 10px;
+}
+button{
+	width: 100%;
+	border: none;
+	height: 50px;
+	border-radius: 3px;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #5C4B99;
+}
+button:hover{
+	background-color: #9F91CC;
+	color: white;
+	cursor: pointer;
+}
+
+/* Card-detail2 */
+.card-details1{
+	padding: 20px 80px;
+}
+.card-details1 .c-details1{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 0 12px;
+	margin-top: 10px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+input{
+	border: none;
+	border-radius: 3px;
+	outline: none;
+}
+
+.email input{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 12px;
+	height: 50px;
+	margin-top: 10px;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.name input{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 12px;
+	height: 50px;
+	margin-top: 10px;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sdt input{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 12px;
+	height: 50px;
+	margin-top: 10px;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+button{
+	width: 100%;
+	border: none;
+	height: 50px;
+	border-radius: 3px;
+	margin-top: 30px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #5C4B99;
+}
+button:hover{
+	background-color: #9F91CC;
+	color: white;
+	cursor: pointer;
+}
+
+/* Card_details3 */
+.card-details2{
+	padding: 20px 30px;
+}
+
+/* Noidung1 */
+.noidung1{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.container1{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container1 header{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container1 .info-form{
+    margin-top: 30px;
+}
+
+.container1 .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label{
+    color: #333;
+}
+
+.info-form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.info-form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.info-form .gender-box{
+    margin-top: 20px;
+}
+
+.gender-box h3{
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.info-form :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.info-form .gender{
+    column-gap: 5px;
+}
+
+.gender input{
+    accent-color: #5C4B99;
+}
+
+.info-form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.gender label{
+    color: #707070;
+}
+
+.address :where(input, .select-box){
+    margin-top: 15px;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.info-form button{
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    background-color: #5C4B99;
+}
+
+.info-form button:hover{
+    background-color: #9F91CC;
+}
+

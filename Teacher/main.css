@@ -1,0 +1,565 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+/* Thanh điều hướng */
+nav{
+    background: #9F91CC;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width: 50%;
+}
+
+.user-pic{
+    width: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 400%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li:last-child{
+    color: #fff;
+    background-color: #3D246C;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    margin-left: 0px;
+    border-radius: 50px;
+}
+
+/* Thông tin mở trên Icon Người dùng */
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: #FFDBC3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0px 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link i{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+/* Footer */
+footer{
+    background-color: #9F91CC;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+
+.mxh{
+    display: flex;
+    justify-content: center;
+}
+.mxh a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.mxh a i{
+    font-size: 2em;
+    color: #9F91CC;
+    opacity: 0.9;
+}
+.mxh a:hover{
+    background-color: #9F91CC;
+    transition: 0.5s;
+}
+.mxh a i:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li{
+    list-style: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #9F91CC;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+
+.noidung{
+    padding: 20px 100px;
+}
+
+.noidung1{
+    padding: 20px 400px;
+}
+
+/* Title_course */
+.title_course{
+    display: flex;
+    padding-bottom: 20px;
+    height: 300px;
+}
+
+.title_course h2{
+    width: 40%;
+    padding: 60px 50px 0 50px;
+    background-color: #9F91CC;
+    color: #fff;
+    font-size: 300%;
+}
+
+.title_course img{
+    width: 100%;
+}
+
+/* Title */
+.title{
+    padding-bottom: 20px;
+}
+
+.title h2{
+    width: 100%;
+    padding: 20px;
+    background-color: #9F91CC;
+    color: #fff;
+    text-align: center;
+}
+
+/* Lesson Content 1*/
+.lesson_show1{
+    /* border: #000 1px solid; */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.lesson_show1 .lesson_box{
+    margin-right: 10px;
+    border: #000 1px solid;
+    width: 35%;
+    border-radius: 5px;
+    padding: 20px 20px;
+    padding-right: none;
+}
+
+.lesson_show1 .lesson_box:last-child{
+    margin-right: 0px;
+}
+
+.lesson_show1 .lesson_box h2{
+    margin-top: 20px;
+}
+
+.lesson_show1 img{
+    width: 80%;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson_show1 button{
+    padding: 10px 30px;
+    background-color: #9F91CC;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+}
+
+/* Lesson Content */
+.lesson_show{
+    border: #000 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lesson_show .lesson_box{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: #000 1px solid;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lesson_show .lesson_box:last-child{
+    margin-bottom: 0px;
+}
+
+.lesson_box_img{
+    width: 10%;
+}
+
+.lesson_box_img img{
+    width: 100%;
+}
+
+.lesson_box_content{
+    margin: 0 30px;
+    width: 50%;
+}
+
+.lesson_box_btn{
+    width: 40%;
+}
+
+.lesson_box_btn button{
+    margin: 10px;
+    padding: 10px 30px;
+    background-color: #9F91CC;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+}
+
+/* Lesson Content */
+.course_show{
+    /* border: #000 1px solid; */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.course_show .course_box{
+    margin-right: 10px;
+    border: #000 1px solid;
+    width: 33%;
+    border-radius: 5px;
+    padding: 20px 20px;
+    padding-bottom: 15px;
+}
+
+.course_box button{
+    margin-right: 10px;
+}
+
+.course_show .course_box:last-child{
+    margin-right: 0px;
+}
+
+.course_show .course_box h2{
+    margin-top: 20px;
+}
+
+.course_box img{
+    width: 80%;
+    height: 60%;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course_show button{
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #9F91CC;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+}
+
+/* Upload form */
+.form_content{
+    margin-left: 350px;
+}
+
+.upload_form{
+    padding-bottom: 20px;
+    border: #000 1px solid;
+    border-radius: 10px;
+}
+
+.upload_form h2{
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    background-color: #5C4B99;
+    padding: 10px 0px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.upload_form .lesson-table{
+    padding-bottom: 20px;
+}
+
+.upload_form tr td{
+	list-style: none;
+	font-weight: 500;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.lesson-table{
+	margin-left: 110px;
+}
+
+.lesson-table tr td input[type="text"]{
+	padding-left: 10px;
+	width: 500px;
+	height: 30px;
+	border: 1px #000 solid;
+}
+
+.lesson-table small{
+    margin: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+/* Upload form 1 */
+/*.form_content{
+    margin-left: 35px;
+}*/
+
+.upload_form1{
+    padding-bottom: 20px;
+    border: #000 1px solid;
+    border-radius: 10px;
+}
+
+.upload_form1 h2{
+    border-radius: 10px 10px 0px 0px;
+    color: #fff;
+    background-color: #5C4B99;
+    padding: 10px 0px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.upload_form1 .lesson-table{
+    padding-bottom: 20px;
+}
+
+.upload_form1 tr td{
+	list-style: none;
+	font-weight: 500;
+	font-size: 16px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.lesson-table{
+	margin-left: 0px;
+}
+
+.lesson-table tr td input[type="text"]{
+	padding-left: 10px;
+	width: 500px;
+	height: 30px;
+	border: 1px #000 solid;
+}
+
+.lesson-table small{
+    margin: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+
+/* #upload input{
+    display: none;
+}
+
+#upload label{
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    border: 1px #000 dashed;
+    padding: 10px 20px;
+    text-align: center;
+} */
+
+#course{
+    width: 300px;
+    height: 30px;
+}
+
+#detail{
+	padding: 10px;
+	width: 500px;
+	height: 200px;
+    text-align: start;
+    border: 1px #000 solid;
+}
+
+#errorMessages{
+    color: red;
+    font-size: 22px;
+}
+
+/* Add Button */
+.abc{
+    padding: 10px 50px;
+    background-color: #9F91CC;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+.abc1{
+    padding: 10px 50px;
+    background-color: #9F91CC;
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 250px;
+}
+
+/* Edit content */
+.edit_content{
+    margin-bottom: 20px;
+    justify-self: right;
+    text-align: right;
+}
+
+.edit_content button{
+    padding: 10px 30px;
+    background-color: #9F91CC;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* File detail*/
+.file_detail{
+    border: #000 1px solid;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.file_detail_table{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.file_detail_table tr td:first-child{
+    background-color: #ccc;
+    width: 15%;
+}
+
+.file_detail_table tr td{
+    border: #ccc 1px solid;
+
+}
+
+.file_detail_table tr td{
+    padding-right: 20px;
+    padding: 10px 0px 10px 10px; 
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0 16px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-right: 1px solid #000;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  margin-right: 16px;
+  transition: background-color 200ms;
+}
+
+input[type="file"]{
+    width: 500px;
+    border: 1px #000 solid;
+}

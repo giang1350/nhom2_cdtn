@@ -1,0 +1,278 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+
+.thanhdieuhuong{
+    width: 100%;
+    background: #fff;
+    color: #9F91CC;
+}
+
+/* Thanh điều hướng */
+nav{
+    background: #9F91CC;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    width: 40%;
+}
+
+.user-pic{
+    width: 5%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav ul{
+    width: 200%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* nav ul li:last-child{
+    color: #fff;
+    background-color: #3D246C;
+    padding: 10px 20px;
+    margin: 10px 10px;
+    margin-left: 0px;
+    border-radius: 50px;
+} */
+
+/* Thông tin mở trên Icon Người dùng */
+.sub-menu-wrap{
+    z-index: 2;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+.sub-menu{
+    background: #FFDBC3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 2%;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h3{
+    font-weight: 500;
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0px 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link i{
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 12px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+
+/* Footer */
+footer{
+    background-color: #9F91CC;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px;
+}
+
+.mxh{
+    display: flex;
+    justify-content: center;
+}
+.mxh a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 50%;
+}
+.mxh a i{
+    font-size: 2em;
+    color: #9F91CC;
+    opacity: 0.9;
+}
+.mxh a:hover{
+    background-color: #9F91CC;
+    transition: 0.5s;
+}
+.mxh a i:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li{
+    list-style: none;
+}
+.footerNav ul li a{
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: #9F91CC;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #fff;
+}
+
+.noidung{
+    padding: 20px 100px;
+}
+
+/* Header Image */
+.header_index{
+    /* padding: 0px 100px; */
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    line-height: 200%;
+}
+
+.headerContainer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100%;
+    background-color: #5C4B99;
+}
+
+.header_left{
+    margin: 50px;
+}
+
+.header_left h1{
+    font-size: 250%;
+    color: #fff;
+    line-height: 105%;
+}
+
+.header_left h2{
+    margin-top: 20px;
+    font-size: 150%;
+    color: #fff;
+}
+
+.header_left p{
+    margin: 20px 0px 30px;
+    color: #fff;
+}
+
+.header_right_img img{
+    width: 100%;
+    height: 80%;
+}
+
+/* About Index */
+.about_index{
+    padding: 50px 100px;
+    line-height: 200%;
+    background-color: #FFDBC3;
+}
+
+.aboutContainer h1{
+    font-size: 250%;
+    color: #5C4B99;
+    margin-bottom: 20px;
+}
+
+.aboutContainer p b{
+    font-size: 150%;
+    color: #5C4B99;
+}
+
+.aboutContainer p{
+    color: #000;
+}
+
+
+
+
+
+.btn-about{
+    border: #fff solid 2px;
+    text-decoration: none;
+    margin-top: 100px;
+    background-color: #9F91CC;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
