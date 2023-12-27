@@ -314,19 +314,24 @@ footer{
 
 /* Lesson Content */
 .course_show{
-    /* border: #000 1px solid; */
     padding: 10px;
     border-radius: 5px;
-    display: flex;
 }
 
 .course_show .course_box{
     margin-right: 10px;
     border: #000 1px solid;
-    width: 33%;
+    width: 100%;
     border-radius: 5px;
     padding: 20px 20px;
     padding-bottom: 15px;
+    height: 100%;
+}
+
+.course_show{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
 }
 
 .course_box button{
@@ -342,8 +347,8 @@ footer{
 }
 
 .course_box img{
-    width: 80%;
-    height: 60%;
+    width: 350px;
+    height: 150px;
     border-radius: 5px;
     display: block;
     margin-left: auto;

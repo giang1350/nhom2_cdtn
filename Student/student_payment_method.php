@@ -150,6 +150,7 @@
                         <br>
                         Ngân hàng: <b>Ngân hàng BIDV</b>
                     </p>
+                    <button>XÁC NHẬN THANH TOÁN</button>
                 </div>
             </div>
 

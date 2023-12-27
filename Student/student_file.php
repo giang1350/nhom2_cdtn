@@ -19,7 +19,7 @@
             <ul>
                 <li><a href="student_about.php">Về Learn&Code</a></li>
                 <li><a href="student_course.php">Khóa học</a></li>
-                <li><a href="student_file.php">Lớp học</a></li>
+                <li><a href="student_file.php" style="background-color: #fff; color: #9F91CC; padding: 10px; border-radius: 10%;">Lớp học</a></li>
                 <li><a href="student_blog.php">Blog</a></li>
                 <li><a href="student_message.php">Tin nhắn</a></li>
                 <li><a href="student_payment.php">Đăng ký học thử</a></li>

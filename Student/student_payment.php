@@ -163,6 +163,7 @@
                 <div class="input_group">
                     <div class="input_box">
                         <button type="submit">Thanh toán</button>
+                        <!-- onclick="location.href = 'student_class.php?MaTL=25' -->
                     </div>
                 </div>
             </form>

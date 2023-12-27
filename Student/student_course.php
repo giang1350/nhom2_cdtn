@@ -23,7 +23,7 @@
             <a href="student_index.php"><img src="./Photo/Learn&CodeLogo_White_Transparent.png" class="logo"></a>
             <ul>
                 <li><a href="student_about.php">Về Learn&Code</a></li>
-                <li><a href="student_course.php">Khóa học</a></li>
+                <li><a href="student_course.php" style="background-color: #fff; color: #9F91CC; padding: 10px; border-radius: 10%;">Khóa học</a></li>
                 <li><a href="student_file.php">Lớp học</a></li>
                 <li><a href="student_blog.php">Blog</a></li>
                 <li><a href="student_message.php">Tin nhắn</a></li>
@@ -73,18 +73,21 @@
             <div class="course_box">
                 <img src="./Photo/scratch_bg.jpg" alt="">
                 <label><h2>Bài học về Scratch</h2></label>
+                <p class = "price">200.000 Đồng</p>
                 <button onclick="location.href = 'student_file.php';">Xem chi tiết</button>
             </div>
 
             <div class="course_box">
                 <img src="./Photo/html_background.jpg" alt="">
                 <label><h2>Complete HTML Tutorial (Part 1)</h2></label>
+                <p class = "price">100.000 Đồng</p>
                 <button onclick="location.href = 'student_payment.php';">Xem chi tiết</button>
             </div>
 
             <div class="course_box">
                 <img src="./Photo/css_background.jpg" alt="">
                 <label><h2>Complete CSS Tutorial (Part 1)</h2></label>
+                <p class = "price">150.000 Đồng</p>
                 <button onclick="location.href = 'student_payment.php';">Xem chi tiết</button>
             </div>
 
@@ -97,6 +100,7 @@
             <div class="course_box" name = course_box>
                 <img src="./Photo/purple_tech_bg.jpg" alt="">
                 <label><h2><?php echo $row['TenKH']?></h2></label>
+                <p class = "price"><?php echo $row['Gia']?></p>
                 <button onclick="location.href = 'student_payment.php';">Xem chi tiết</button>
             </div>
             <?php endwhile?>

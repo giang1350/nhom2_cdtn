@@ -3,27 +3,29 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chào mừng đến Learn & Code - Lập trình Online cho trẻ em</title>
-    <link rel="stylesheet" href="main_1.css">
+    <title>Khóa học - Giáo viên</title>
+    <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <?php include "connect.php";?>
+    <?php
+        $result = $conn -> query("SELECT * FROM khoahoc");
+    ?>
     <div class="thanhdieuhuong">
         <nav>
-            <a href="#"><img src="./Photo/Learn&CodeLogo_Transparent.png" class="logo"></a>
+            <a href="teacher_index.php"><img src="./Photo/Learn&CodeLogo_White_Transparent.png" class="logo"></a>
             <ul>
-                <li><a href="#">Về Learn&Code</a></li>
-                <li><a href="#">Khóa học</a></li>
+                <li><a href="teacher_about.php">Về Learn&Code</a></li>
+                <li><a href="teacher_course.php" style="background-color: #fff; color: #9F91CC; padding: 10px; border-radius: 10%;">Khóa học</a></li>
                 <li><a href="#">Lớp học</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Tin nhắn</a></li>
-                <li><a href="#">Đăng ký học thử</a></li>
             </ul>
             <img src="./Photo/user_images.png" class="user-pic" onclick="toggleMenu()">
 
@@ -60,41 +62,27 @@
         </nav>
     </div>
 
-    <!-- Giới thiệu trang chủ -->
-    <div class="header_index">
-        <div class="headerContainer">
-            <div class="header_left">
-                <h1>Chào mừng đến trang Learn&Code</h1>
-                <h2>Lập trình Online dành cho trẻ em từ 12-18 tuổi</h2>
-                <p>Tại Learn&Code, các khoá học được xây dựng bằng phương pháp giảng dạy hiện đại, phù hợp với mọi độ tuổi. Đưa học sinh đến với thế giới muôn màu của những câu lệnh, nơi các bạn có thể tạo ra sản phẩm công nghệ của riêng mình.</p>
-                <a href="student_about.php" class="btn-about">Tìm hiểu thêm</a>
-            </div>
-
-            <div class="header_right">
-                <div class="header_right_img">
-                    <img src="./Photo/student_index.jpg" alt=""> 
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="about_index">
-        <div class="aboutContainer">
-            <h1>Vì sao chọn chúng tôi?</h1>
-            <p>Chào mừng bạn đến với Learn&Code, nơi mang đến một trải nghiệm học lập trình tuyệt vời cho trẻ em! 
-                Chúng tôi cam kết đưa ra một phương pháp giáo dục sáng tạo và thú vị, giúp trẻ có thể phát triển kỹ năng lập trình.</p>
-            <p>
-                <b>1. Đội ngũ giáo viên chuyên nghiệp:</b><br>
-                Chúng tôi có đội ngũ giáo viên có kinh nghiệm trong giảng dạy lập trình cho trẻ em. Họ không chỉ là những người tài giỏi về mã nguồn mà còn có khả năng truyền đạt kiến thức một cách dễ hiểu và thú vị. <br>
-
-                <b>2. Tài liệu đầy đủ:</b><br>
-                Learn&Code cung cấp nhiều khóa học lập trình khác nhau, từ cơ bản đến nâng cao. Điều này giúp phụ huynh và học sinh lựa chọn khóa học phù hợp với trình độ và mong muốn của mình. <br>
-
-                <b>3. Hỗ trợ cá nhân hóa:</b><br>
-                Chúng tôi hiểu rằng mỗi đứa trẻ có cách học riêng biệt. Hệ thống của chúng tôi giúp theo dõi tiến độ của học sinh và tùy chỉnh nội dung học tập để phản ánh nhu cầu cụ thể của từng em. <br>
-            </p>
+    <div class="noidung">
+        <div class="title">
+            <h2>CÁC KHÓA HỌC</h2>
         </div>
 
+        <div class="edit_content">
+            <button onclick="location.href = 'teacher_course_add.php';">Thêm khóa học</button>
+        </div>
+
+        <div class="course_show">
+            <?php 
+            ?>
+            <?php while ($row = mysqli_fetch_assoc($result)):?>
+            <div class="course_box" name = course_box>
+                <img src="./Photo/purple_tech_bg.jpg" alt="">
+                <label><h2><?php echo $row['TenKH']?></h2></label>
+                <button style="background-color: red;" onclick="location.href = 'connect.php?delete=<?php echo $row['MaKH'];?>';">Xóa</button>
+                <button onclick="location.href = 'teacher_file.php';">Xem chi tiết</button>
+            </div>
+            <?php endwhile?>
+        </div>
     </div>
 
     <footer>
