@@ -86,7 +86,7 @@
                     <tr>
                         <td>Tài liệu</td>
                         <td>
-                            <a href=""><?php echo $result['TenFile']?></a>
+                            <a href="student_read.php"><?php echo $result['TenFile']?></a>
                             <!-- <input type="file"> -->
                         </td>
                     </tr>

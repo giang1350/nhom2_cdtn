@@ -660,7 +660,7 @@ footer{
 /* PDF Viewers */
 .pdfviewers{
     margin-top: 20px;
-    height: 100%;
+    height: 600px;
 }
 
 #pdfviewer{
