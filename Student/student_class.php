@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Photo/logo-icon.png">
     <title>Chi tiết bài học | Learn & Code</title>
     <link rel="stylesheet" type="text/css" href="main_1.css">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>

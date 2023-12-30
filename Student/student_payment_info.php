@@ -4,6 +4,7 @@
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Photo/logo-icon.png">
     <title>Thông tin đăng ký | Learn & Code</title>
     <link rel="stylesheet" href="demo_testing.css">
     <style type="text/css">
@@ -77,7 +78,7 @@
                 <li><a href="student_file.php">Lớp học</a></li>
                 <li><a href="student_blog.php">Blog</a></li>
                 <li><a href="student_message.php">Tin nhắn</a></li>
-                <li><a href="student_payment.php">Đăng ký học thử</a></li>
+                <li><a href="student_payment_info.php">Đăng ký học thử</a></li>
             </ul>
             <img src="./Photo/user_images.png" class="user-pic" onclick="toggleMenu()">
 

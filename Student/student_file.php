@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài học | Learn&Code</title>
     <link rel="stylesheet" href="main_1.css">
+    <link rel="icon" href="./Photo/logo-icon.png">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
                 <li><a href="student_file.php" style="background-color: #fff; color: #9F91CC; padding: 10px; border-radius: 10%;">Lớp học</a></li>
                 <li><a href="student_blog.php">Blog</a></li>
                 <li><a href="student_message.php">Tin nhắn</a></li>
-                <li><a href="student_payment.php">Đăng ký học thử</a></li>
+                <li><a href="student_payment_info.php">Đăng ký học thử</a></li>
             </ul>
             <img src="./Photo/user_images.png" class="user-pic" onclick="toggleMenu()">
 
