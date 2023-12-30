@@ -93,6 +93,10 @@
                 </table>
             </div>
         </div>
+
+        <div class="pdfviewers" >
+            <iframe id="pdfviewer" src="./uploads/TimHieuVeScratch.pdf" style="height: 100%;" type=""></iframe>
+        </div>
         <br>
     </div>
 

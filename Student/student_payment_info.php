@@ -6,9 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông tin đăng ký | Learn & Code</title>
     <link rel="stylesheet" href="demo_testing.css">
-    <script src=""></script>
+    <style type="text/css">
+        .error{
+            color: red;
+            padding-top: 10px;
+        }
+    </style>
+
 </head>
 <body>
+    <?php include "connect.php";?>
+    <?php
+        $Loi1 = "";
+        $Loi2 = "";
+        $Loi3 = "";
+        $Loi4 = "";
+        $Loi5 = "";
+
+        //Điều kiện
+        if (isset($_POST['confirm'])) {
+            if (empty($_POST['name'])) {
+                $Loi1 = "Xin vui lòng nhập họ tên.";
+            }
+            else{
+                $name = $_POST['name'];
+            }
+
+            if (empty($_POST['email'])) {
+                $Loi2 = "Xin vui lòng nhập email.";
+            }
+            else{
+                $email = $_POST['email'];
+            }
+
+            if (empty($_POST['phonenumber'])) {
+                $Loi3 = "Xin vui lòng nhập số điện thoại.";
+            }
+            else{
+                $email = $_POST['phonenumber'];
+            }
+
+            if (empty($_POST['birth-date'])) {
+                $Loi4 = "Xin vui lòng nhập ngày sinh.";
+            }
+            else{
+                $birthdate = $_POST['birth-date'];
+            }
+
+            if (empty($_POST['address'])) {
+                $Loi5 = "Xin vui lòng nhập địa chỉ.";
+            }
+            else{
+                $address = $_POST['address'];
+            }
+
+
+            if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phonenumber']) && !empty($_POST['birth-date']) && !empty($_POST['address'])) {
+                echo "<script>
+                        window.location.href='student_payment_method.php';
+                    </script>";
+            }
+        }
+    ?>
     <div class="thanhdieuhuong">
         <nav>
         <a href="student_index.php"><img src="./Photo/Learn&CodeLogo_White_Transparent.png" class="logo"></a>
@@ -58,26 +117,34 @@
     <div class="noidung1">
         <section class = "container1">
             <header>Thông tin thanh toán</header>
-            <form action="#" class="info-form">
+            <form action="#" class="info-form" method="post">
                 <div class="input-box">
                     <label for="">Họ tên</label>
-                    <input type="text" name="name" placeholder="Nhập họ tên" required>
+                    <input type="text" name="name" placeholder="Nhập họ tên" value= "<?php if (isset($name)) echo $name;?>">
+                        <?php if (isset($Loi1)) echo "<hr> <div class='error'>$Loi1</div>"
+                        ?>
                 </div>
 
                 <div class="input-box">
                     <label for="">Email</label>
-                    <input type="text" name="email" placeholder="Nhập địa chỉ Email" required>
+                    <input type="text" name="email" placeholder="Nhập địa chỉ Email" value= "<?php if (isset($email)) echo $email;?>">
+                        <?php if (isset($Loi2)) echo "<hr> <div class='error'>$Loi2</div>"
+                        ?>
                 </div>
 
                 <div class="column">
                     <div class="input-box">
                         <label for="">Số điện thoại</label>
-                        <input type="number" name="phonenumber" placeholder="Nhập số điện thoại" required>
+                        <input type="number" name="phonenumber" placeholder="Nhập số điện thoại" value= "<?php if (isset($phonenumber)) echo $phonenumber;?>">
+                        <?php if (isset($Loi3)) echo "<hr> <div class='error'>$Loi3</div>"
+                        ?>
                     </div>
 
                     <div class="input-box">
                         <label for="">Ngày sinh</label>
-                        <input type="date" placeholder="Nhập ngày sinh" required>
+                        <input type="date" name="birth-date" placeholder="Nhập ngày sinh" value= "<?php if (isset($birthdate)) echo $birthdate;?>">
+                        <?php if (isset($Loi4)) echo "<hr> <div class='error'>$Loi4</div>"
+                        ?>
                     </div>
                 </div>
 
@@ -101,7 +168,9 @@
 
                 <div class="input-box address">
                     <label for="">Địa chỉ</label>
-                    <input type="text" name="address" placeholder="Nhập địa chỉ" required>
+                    <input type="text" name="address" placeholder="Nhập địa chỉ" <?php if (isset($address)) echo $address;?>">
+                        <?php if (isset($Loi5)) echo "<hr> <div class='error'>$Loi5</div>"
+                        ?>
                     <div class="column">
                         <div class="select-box">
                             <select>
@@ -116,7 +185,7 @@
                     </div>
                 </div>
 
-                <button type="button" onclick="location.href='student_payment_method.php'">Xác nhận</button>
+                <button name="confirm" onclick="">Xác nhận</button>
             </form>
         </section>
     </div>
