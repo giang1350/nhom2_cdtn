@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chỉnh sửa tài liệu - Giáo viên</title>
+    <link rel="icon" href="./Photo/user_images.png">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
     <style type="text/css">
@@ -100,21 +101,6 @@
             }
         }
         $conn-> close();
-
-        //Đăng tài liệu
-        // $folder_path = 'Photo/';
-        // $file_path = $folder_path.$_FILES['TenFile']['name'];
-
-        // $flag_ok = true;
-
-        // $ex = array('jpg', 'png', 'jpeg');
-        // $file_type = strtolower(pathinfo($file_path, PATHINFO_EXTENSION));
-        // if (in_array($file_type, $ex)) {
-        //     $flag_ok = false;
-        // }
-
-        // if ($FILES) {
-        // }
     ?>
     <div class="thanhdieuhuong">
         <nav>

@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Về Learn & Code - Giáo viên</title>
+    <link rel="icon" href="./Photo/user_images.png">
     <link rel="stylesheet" href="main1.css">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
 </head>

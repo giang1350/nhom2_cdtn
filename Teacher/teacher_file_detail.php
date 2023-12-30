@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tài liệu chi tiết - Giáo viên | Learn&Code</title>
+    <link rel="icon" href="./Photo/user_images.png">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
 </head>
