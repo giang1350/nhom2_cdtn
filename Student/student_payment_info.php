@@ -117,7 +117,7 @@
 
     <div class="noidung1">
         <section class = "container1">
-            <header>Thông tin thanh toán</header>
+            <h1>Thông tin thanh toán</h1>
             <form action="#" class="info-form" method="post">
                 <div class="input-box">
                     <label for="">Họ tên</label>
