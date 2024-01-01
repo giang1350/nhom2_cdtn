@@ -61,7 +61,7 @@
             if (!empty($_GET['cnumber']) && !empty($_GET['edate']) && !empty($_GET['cvv']) && !empty($_GET['email'])) {
                 echo "<script>
                         alert('Đã thanh toán thành công!');
-                        window.location.href='student_index.php';
+                        window.location.href='student_payment_notifications.php';
                     </script>";
             }
         }
@@ -99,7 +99,7 @@
             if (!empty($_GET['ccnumber']) && !empty($_GET['fullname']) && !empty($_GET['phonenumber']) && !empty($_GET['email1'])) {
                 echo "<script>
                         alert('Đã thanh toán thành công!');
-                        window.location.href='student_index.php';
+                        window.location.href='student_payment_notifications.php';
                     </script>";
             }
         }
@@ -108,7 +108,7 @@
         if (isset($_GET['btn3'])) {
             echo "<script>
                 alert('Đã thanh toán thành công!');
-                window.location.href='student_index.php';
+                window.location.href='student_payment_notifications.php';
                 </script>";
         }
 

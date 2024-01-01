@@ -428,6 +428,35 @@ button:hover{
     background-color: #fff;
 }
 
+.noidung{
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.noti{
+    padding: 20px;
+    margin: 0px 300px;
+    text-align: center;
+    border: 5px dotted #000;
+}
+
+.noti h1{
+    color: #5C4B99;
+}
+
+.noti p{
+    padding-top: 20px;
+    font-size: 22px;
+    line-height: 2rem;
+}
+
+.noti button{
+    width: 200px;
+}
+
 .container1{
     position: relative;
     max-width: 700px;
