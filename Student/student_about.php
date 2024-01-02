@@ -19,7 +19,7 @@
         <nav>
         <a href="student_index.php"><img src="./Photo/Learn&CodeLogo_White_Transparent.png" class="logo"></a>
             <ul>
-                <li><a href="student_about.php">Về Learn&Code</a></li>
+                <li><a href="student_about.php" style="background-color: #fff; color: #9F91CC; padding: 10px; border-radius: 10%;">Về Learn&Code</a></li>
                 <li><a href="student_course.php">Khóa học</a></li>
                 <li><a href="student_file.php">Lớp học</a></li>
                 <li><a href="student_blog.php">Blog</a></li>
