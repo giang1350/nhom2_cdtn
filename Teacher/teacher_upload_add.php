@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng tài liệu - Giáo viên</title>
-    <link rel="icon" href="./Photo/user_images.png">
+    <title>Thêm tài liệu - Giáo viên</title>
+    <link rel="shortcut icon" type="image/png" href="./Photo/user_images.png">
     <link rel="stylesheet" href="main.css">
     <script src="https://kit.fontawesome.com/ee7308e344.js" crossorigin="anonymous"></script>
     <style type="text/css">
@@ -210,8 +210,8 @@
             </div>
             <div class="footerNav">
                 <ul>
-                    <li><a href="#">Về Learn&Code</a></li>
-                    <li><a href="#">Khóa học</a></li>
+                    <li><a href="teacher_about.php">Về Learn&Code</a></li>
+                    <li><a href="teacher_course.php">Khóa học</a></li>
                     <li><a href="#">Lớp học</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Tin nhắn</a></li>

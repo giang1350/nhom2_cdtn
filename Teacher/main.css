@@ -17,17 +17,18 @@ nav{
 }
 
 .logo{
-    width: 50%;
+    width: 40%;
 }
 
 .user-pic{
     width: 5%;
     border-radius: 50%;
     cursor: pointer;
+    margin-left: 30px;
 }
 
 nav ul{
-    width: 400%;
+    width: 300%;
     text-align: right;
 }
 
@@ -42,14 +43,14 @@ nav ul li a{
     text-decoration: none;
 }
 
-nav ul li:last-child{
+/* nav ul li:last-child{
     color: #fff;
     background-color: #3D246C;
     padding: 10px 20px;
     margin: 10px 10px;
     margin-left: 0px;
     border-radius: 50px;
-}
+} */
 
 /* Thông tin mở trên Icon Người dùng */
 .sub-menu-wrap{
