@@ -33,36 +33,36 @@
                 $name = $_POST['name'];
             }
 
-            if (empty($_POST['email'])) {
+            if (empty($_POST['email0'])) {
                 $Loi2 = "Xin vui lòng nhập email.";
             }
             else{
-                $email = $_POST['email'];
+                $email0 = $_POST['email0'];
             }
 
-            if (empty($_POST['phonenumber'])) {
+            if (empty($_POST['phonenumber0'])) {
                 $Loi3 = "Xin vui lòng nhập số điện thoại.";
             }
             else{
-                $email = $_POST['phonenumber'];
+                $phonenumber0 = $_POST['phonenumber0'];
             }
 
-            if (empty($_POST['birth-date'])) {
+            if (empty($_POST['birthdate0'])) {
                 $Loi4 = "Xin vui lòng nhập ngày sinh.";
             }
             else{
-                $birthdate = $_POST['birth-date'];
+                $birthdate0 = $_POST['birthdate0'];
             }
 
-            if (empty($_POST['address'])) {
+            if (empty($_POST['address0'])) {
                 $Loi5 = "Xin vui lòng nhập địa chỉ.";
             }
             else{
-                $address = $_POST['address'];
+                $address0 = $_POST['address0'];
             }
 
 
-            if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['phonenumber']) && !empty($_POST['birth-date']) && !empty($_POST['address'])) {
+            if (!empty($_POST['name']) && !empty($_POST['email0']) && !empty($_POST['phonenumber0']) && !empty($_POST['birthdate0']) && !empty($_POST['address0'])) {
                 echo "<script>
                         window.location.href='student_payment_method.php';
                     </script>";
@@ -128,7 +128,7 @@
 
                 <div class="input-box">
                     <label for="">Email</label>
-                    <input type="text" name="email" placeholder="Nhập địa chỉ Email" value= "<?php if (isset($email)) echo $email;?>">
+                    <input type="text" name="email0" maxlength="100" placeholder="Nhập địa chỉ Email" value= "<?php if (isset($email0)) echo $email0;?>">
                         <?php if (isset($Loi2)) echo "<hr> <div class='error'>$Loi2</div>"
                         ?>
                 </div>
@@ -136,14 +136,14 @@
                 <div class="column">
                     <div class="input-box">
                         <label for="">Số điện thoại</label>
-                        <input type="number" name="phonenumber" placeholder="Nhập số điện thoại" value= "<?php if (isset($phonenumber)) echo $phonenumber;?>">
+                        <input type="number" name="phonenumber0" placeholder="Nhập số điện thoại" value= "<?php if (isset($phonenumber0)) echo $phonenumber0;?>" maxlength="10">
                         <?php if (isset($Loi3)) echo "<hr> <div class='error'>$Loi3</div>"
                         ?>
                     </div>
 
                     <div class="input-box">
                         <label for="">Ngày sinh</label>
-                        <input type="date" name="birth-date" placeholder="Nhập ngày sinh" value= "<?php if (isset($birthdate)) echo $birthdate;?>">
+                        <input type="date" name="birthdate0" placeholder="Nhập ngày sinh" value= "<?php if (isset($birthdate0)) echo $birthdate0;?>">
                         <?php if (isset($Loi4)) echo "<hr> <div class='error'>$Loi4</div>"
                         ?>
                     </div>
@@ -169,7 +169,7 @@
 
                 <div class="input-box address">
                     <label for="">Địa chỉ</label>
-                    <input type="text" name="address" placeholder="Nhập địa chỉ" <?php if (isset($address)) echo $address;?>">
+                    <input type="text" name="address0" placeholder="Nhập địa chỉ" maxlength="150" value= "<?php if (isset($address0)) echo $address0;?>">
                         <?php if (isset($Loi5)) echo "<hr> <div class='error'>$Loi5</div>"
                         ?>
                     <div class="column">
@@ -220,6 +220,14 @@
         function toggleMenu(){
             subMenu.classList.toggle("open-menu");
         }
+
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.oninput = () => {
+                if (input.value.length > input.maxLength) {
+                    input.value = input.value.slice(0, input.maxLength);
+                }
+            }
+        })
     </script>
 </body>
 </html>

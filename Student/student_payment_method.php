@@ -219,7 +219,7 @@
 
                         <div class="email">
                             <p>Email</p>
-                            <input type="email" name="email" placeholder="example@email.com" value= "<?php if (isset($email)) echo $email;?>" id="email">
+                            <input type="email" name="email" maxlength="100" placeholder="example@email.com" value= "<?php if (isset($email)) echo $email;?>" id="email">
                             <?php if (isset($Error4)) echo "<div class='error'>$Error4</div>"?>
                         </div>
 
@@ -254,7 +254,7 @@
 
                         <p style="margin-top: 10px;">Email</p>
                         <div class="c-details1">
-                            <input type="email" name="email1" placeholder="example@email.com" value= "<?php if (isset($email1)) echo $email1;?>" id="email">
+                            <input type="email" name="email1" maxlength="100" placeholder="example@email.com" value= "<?php if (isset($email1)) echo $email1;?>" id="email">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <?php if (isset($Error8)) echo "<div class='error'>$Error8</div>"?>
@@ -292,6 +292,14 @@
         </div>
 
         <script>
+            document.querySelectorAll('input[type="number"]').forEach(input => {
+                        input.oninput = () => {
+                            if (input.value.length > input.maxLength) {
+                                input.value = input.value.slice(0, input.maxLength);
+                            }
+                        }
+                    })
+
             let tColorA = document.getElementById('tColorA'),
             tColorB = document.getElementById('tColorB'),
             tColorC = document.getElementById('tColorC'),
@@ -424,6 +432,14 @@
         function toggleMenu(){
             subMenu.classList.toggle("open-menu");
         }
+
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.oninput = () => {
+                if (input.value.length > input.maxLength) {
+                    input.value = input.value.slice(0, input.maxLength);
+                }
+            }
+        })
     </script>
 </body>
 </html>
