@@ -80,14 +80,14 @@
 
             <div class="course_box">
                 <img src="./Photo/html_background.jpg" alt="">
-                <label><h2>Complete HTML Tutorial (Part 1)</h2></label>
+                <label><h2>Bài học về HTML (Phần 1)</h2></label>
                 <p class = "price">100.000 Đồng</p>
                 <button onclick="location.href = 'student_payment_info.php';">Xem chi tiết</button>
             </div>
 
             <div class="course_box">
                 <img src="./Photo/css_background.jpg" alt="">
-                <label><h2>Complete CSS Tutorial (Part 1)</h2></label>
+                <label><h2>Bài học về CSS (Phần 1)</h2></label>
                 <p class = "price">150.000 Đồng</p>
                 <button onclick="location.href = 'student_payment_info.php';">Xem chi tiết</button>
             </div>
@@ -118,11 +118,11 @@
             </div>
             <div class="footerNav">
                 <ul>
-                    <li><a href="#">Về Learn&Code</a></li>
-                    <li><a href="#">Khóa học</a></li>
-                    <li><a href="#">Lớp học</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Tin nhắn</a></li>
+                    <li><a href="student_about.php">Về Learn&Code</a></li>
+                    <li><a href="student_course.php">Khóa học</a></li>
+                    <li><a href="student_file.php">Lớp học</a></li>
+                    <li><a href="student_blog.php">Blog</a></li>
+                    <li><a href="student_message.php">Tin nhắn</a></li>
                 </ul>
             </div>
             <div class="footerBottom">

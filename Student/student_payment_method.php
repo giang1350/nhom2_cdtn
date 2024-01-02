@@ -405,11 +405,11 @@
             </div>
             <div class="footerNav">
                 <ul>
-                    <li><a href="#">Về Learn&Code</a></li>
-                    <li><a href="#">Khóa học</a></li>
-                    <li><a href="#">Lớp học</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Tin nhắn</a></li>
+                    <li><a href="student_about.php">Về Learn&Code</a></li>
+                    <li><a href="student_course.php">Khóa học</a></li>
+                    <li><a href="student_file.php">Lớp học</a></li>
+                    <li><a href="student_blog.php">Blog</a></li>
+                    <li><a href="student_message.php">Tin nhắn</a></li>
                 </ul>
             </div>
             <div class="footerBottom">
